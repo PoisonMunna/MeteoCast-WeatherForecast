@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteoCast-Professional Weather Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="public/x.png" type="image/png">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo"><i class="fa-solid fa-cloud-bolt"></i> MeteoCast</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#home">Weather</a></li>
+            <li><a href="#developer">Developer</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fa-solid fa-moon"></i> Dark Mode
+        </button>
+    </nav>
+
+      <!-- About Section -->
+    <section id="about">
+        <div class="content-box">
+            <h2>About MeteoCast</h2>
+            <p>MeteoCast is a cutting-edge weather dashboard designed to provide real-time meteorological data with precision and speed. Built using the latest web technologies, it ensures you are always prepared for the elements, whether you are planning a trip or just heading to the grocery store.</p>
+        </div>
+    </section>
+
+        <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Real-Time Data</h3>
+                <p>Instant updates directly from global meteorological stations.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Responsive Design</h3>
+                <p>Optimized for Desktops, Tablets, and Mobile devices.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Visual Details</h3>
+                <p>Dynamic icons and glassmorphism UI for better readability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Section (Weather App) -->
+    <section id="home">
+        <div class="container">
+            <div class="weather-card">
+                <div class="search">
+                    <input type="text" placeholder="Enter city name" spellcheck="false">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="error">
+                    <p>Invalid city name. Please try again.</p>
+                </div>
+
+                <div class="weather">
+                    <img src="https://openweathermap.org/img/wn/02d@4x.png" class="weather-icon">
+                    <h1 class="temp">--°c</h1>
+                    <h2 class="city">City Name</h2>
+                    <p class="desc">Weather Description</p>
+
+                    <div class="details">
+                        <div class="col">
+                            <i class="fa-solid fa-water"></i>
+                            <div>
+                                <p class="humidity">--%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <i class="fa-solid fa-wind"></i>
+                            <div>
+                                <p class="wind">-- km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                         <!-- NEW AQI SECTION -->
+                        <div class="col">
+                            <i class="fa-solid fa-smog"></i>
+                            <div>
+                                <p class="aqi">--°</p>
+                                <p>AQI</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section id="developer">
+        <h2>Meet the Developer</h2>
+        <div class="dev-card">
+            <div class="dev-img-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+            <h3>Mayank Raj</h3>
+            <p>Full Stack Web Developer</p>
+            <p>Passionate about building interactive UIs and solving real-world problems with code.</p>
+            <div class="socials">
+                <a href="https://www.github.com/PoisonMunna" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mayank-raj-067248341" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MeteoCast Weather App. All Rights Reserved.</p>
+    </footer>
+
+     <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
