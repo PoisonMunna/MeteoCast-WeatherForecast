@@ -28,6 +28,18 @@ The app fetches live weather data including **Temperature**, **Humidity**, **Win
 
 ---
 
+## 🖼️ Screenshots
+
+### Light Theme
+![Light Theme](screenshots/light-theme.png)
+![Light Theme](screenshots/light-data.png)
+
+### Dark Theme
+![Dark Theme](screenshots/dark-theme.png)
+![Dark Theme](screenshots/dark-data.png)
+
+---
+
 ## 🚀 Live Demo
 
 👉 **[View Live Demo](https://PoisonMunna.github.io/MeteoCast-WeatherForecast)**  
