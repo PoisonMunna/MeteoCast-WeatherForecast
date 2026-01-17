@@ -130,7 +130,7 @@ section {
 #about {
     padding-top: 150px; 
     min-height: 90vh;
-    background-image: url(public/1.jpg);
+    background-image: url(./public/1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ section {
 
 /* Dark Theme Image Override */
 .dark-theme #about {
-    background-image: url(public/2.jpg);
+    background-image: url(./public/2.jpg);
 }
 
 /* Content Box (Glassmorphism + Glow) */
@@ -165,14 +165,14 @@ section {
 
 /* ================= WEATHER SECTION ================= */
 #home {
-    background: url(public/3.jpg);
+    background: url(./public/3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .dark-theme #home {
-    background-image: url(public/4.jpg);
+    background-image: url(./public/4.jpg);
 }
 
 .weather-card {
